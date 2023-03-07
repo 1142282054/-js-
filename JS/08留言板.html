@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #text{
+            margin-left: 50px;
+            resize: none;
+            overflow: auto;
+        }
+        .btn{
+            margin-left: 20px;
+            width: 40px;
+            height: 30px;
+        }
+        .leave{
+            width: 300px;
+            height: 800px;
+            border: 1px #333 solid;
+            margin: 50px;
+            overflow: auto;
+        }
+        .leave li{
+            margin: 5px;
+            padding: 5px;
+            list-style: none;
+            border: pink 1px solid;
+
+        }
+        .leave li a{
+            float: right;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <textarea name="" id="text" cols="30" rows="10"></textarea>
+    <button class="btn">留言</button>
+    <ul class="leave">
+    </ul>
+    <script>
+        var text = document.querySelector('#text');
+        var btn = document.querySelector('.btn');
+        var ul = document.querySelector('.leave');
+
+        btn.onclick = function(){
+            if(text.value == ''){
+                alert('error');
+            }else{
+                //创建元素,并包装节点
+                var li = document.createElement('li');
+                li.innerHTML = text.value + "<a herf = 'JavaScript:'>删除</a>";
+                //添加节点
+                ul.insertBefore(li,ul.children[0]);
+                text.value = '';//恢复文本框
+
+                // 删除元素
+                // var as = document.querySelectorAll('.leave li a');
+                // for(i = 0; i< as.length; i++){
+                //     as[i].onclick = function(){
+                //         ul.removeChild(this.parentNode);
+                //     }
+                // }
+                var a = li.querySelector('a');
+                a.onclick = function(){
+                    ul.removeChild(this.parentNode);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

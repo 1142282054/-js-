@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .adv{
+            position: relative;
+            top: 100px;
+            left: 50%;
+            margin-left: -50px;
+            width: 100px;
+            height: 200px;
+            background: url(../html/imges/img01.jfif) no-repeat;
+        }
+        .closee{
+            position: absolute;
+            top: 0px;
+            left: -10px;
+            width: 10px;
+            height: 10px;
+            background-color: #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="adv">
+        <div class="closee"></div>
+    </div>
+    <script>
+        //元素选择
+        var closee = document.querySelector('.closee');
+        var adv = document.querySelector('.adv');
+        // 事件
+        closee.onclick = function(){
+            // display = 'none'；
+            adv.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

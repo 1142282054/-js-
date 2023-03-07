@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text">
+    <button>获取验证码</button>
+    <script>
+        // 选择对象
+        var btn = document.querySelector('button');
+        // 绑定事件，开启计时器
+        btn.addEventListener('click', function () {
+            var time = 10;//标志秒数
+            btn.disabled = true;
+            // 计时器方法，修改btn的display样式和innerHTML属性
+            var getCheck = function () {
+                if (time == 0) {//恢复原来属性和样式
+                    clearInterval(Timer);
+                    time = 10;
+                    btn.disabled = false;
+                    btn.innerHTML = '获取验证码';
+                } else {
+                    btn.innerHTML = time-- + '后重新发送';
+                }
+            }
+            getCheck();//填补开始空白阶段
+            // 开启计时器
+            var Timer = setInterval(getCheck, 1000);
+        })
+    </script>
+</body>
+
+</html>

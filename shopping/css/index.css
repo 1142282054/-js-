@@ -1,0 +1,241 @@
+/* main 模块制作 */
+.main{
+    margin-left: 220px;
+    margin-top: 10px;
+    width: 980px;
+    height: 455px;
+}
+.main .focus{
+    position: relative;
+    overflow: hidden;
+    width: 721px;
+    height: 100%;
+}
+
+/* 减少代码冗余 */
+.focus div{
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    height: 40px;
+    width: 40px;
+    color: #666;
+    background-color: rgba(0,0,0,.3);
+    display: none;
+}
+.focus .prve{
+    left: 0px;
+    z-index: 10;
+    border-radius: 20px 0px 0px 20px;
+}
+.focus .last{
+    right: 0px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.focus .pot{
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .3);
+}
+.pot li{
+    float: left;
+    margin: 0px 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+div ul li.current{
+    background-color: #333;
+}
+
+.focus .pics{
+    position: relative;
+    width: 3000px;
+    
+}
+.focus .pics li{
+    float: left;
+}
+
+.main .newsflash{
+    float: right;
+    width: 250px;
+    height: 100%;
+}
+.newsflash .bulletin{
+    width: 100%;
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+.bulletin dt{
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 30px;
+    height: 32px;
+    border-bottom: 1px dotted #e4e4e4;
+}
+.bulletin dd{
+    padding-left: 15px;
+    margin-top: 13px;
+    width: 95%;
+    /* 省略号使用 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main_nav{
+    width: 100%;
+    height: 213px;
+}
+.main_nav li{
+    float: left;
+    width: 25%;
+    height: 71px;
+    text-align: center;
+    border-left: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+.main_nav li:nth-child(4n){
+    border-right: 1px solid #e4e4e4;
+}
+
+.main .banner{
+    margin-top: 2px;
+}
+.main_nav i{
+    display: inline-block;
+    width: 22px;
+    height: 26px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat;
+    /* -19px -15px */
+}
+
+/* 推荐recommendation板块制作 */
+.recom{
+    margin-top: 12px;
+    height: 165px;
+    background-color: #ebebeb;
+}
+.recom div{
+    float: left;
+    margin: 10px 0px;
+    width: 247px;
+    height: 125px;
+    border-left: 1px solid #e4e4e4;
+    overflow: hidden;
+}
+.recom .today_recom{
+    width: 205px;
+    height: 100%;
+    /* 去除统一de内外边距 */
+    margin: 0px;
+    text-align: center;
+    padding-top: 30px;
+    background-color: #5c5251;
+}
+ 
+/* floor制作 */
+/* 第一层appliances家用电器模块 */
+.floor{
+    margin-top: 15px;
+}
+.appliances .box_hd{
+    height: 32px;
+    padding-top: 6px;
+    /* line-height: 32px; */
+    border-bottom: 2px solid #c81623;
+}
+.appliances .box_bd{
+    height: 360px;
+}
+.appliances .box_hd h3{
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    color: #c81623;
+}
+.appliances .box_hd li{
+    float: right;
+    height: 12px;
+    padding: 0 12px;
+    border-left: 1px solid #666;
+}
+.appliances .box_hd li:last-child{
+    border: 0px;
+}
+.tab_list_item{
+    height: 360px;
+}
+.col210{
+    float: left;
+    margin-left: -70px ;
+    padding-left: 15px;
+    width: 208px;
+    height: 100%;
+    background-color: #f9f9f9;
+}
+.col330{
+    float: left;
+    width: 330px;
+    overflow: hidden;
+}
+.col220{
+    float: left;
+    width: 220px;
+    overflow: hidden;
+}
+
+.col210 li{
+    float: left;
+    margin-right: 10px;
+    width: 85px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-bottom: 1px solid #ededed;
+}
+.tab_list_item img{
+    border: 1px solid #ededed;
+    transition: all 2s;
+}
+.tab_list_item img:hover{
+    transform: translate(0px, -20%) scale(1.5);
+}
+
+.cellphone{
+    margin-top: 24px;
+}
+
+.computer{
+    margin-top: 24px;
+}
+
+/* sidebar */
+.sidebar{
+    position: absolute;
+    top: 345px;
+    left: 50%;
+    margin-left: -670px;
+    width: 66px;
+}
+.sidebar li a{
+    display: block;
+    width:100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-bottom: 1px solid #5c5251;
+}
+.sidebar li a:hover{
+    color: #fff;
+    background-color: #c81623;
+}

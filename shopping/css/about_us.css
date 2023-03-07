@@ -1,0 +1,105 @@
+.header{
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+.video{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0,0,0,0.1); */
+}
+video{
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+.video_font{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -370px;
+    width: 745px;
+    height: 187px;
+    text-align: center;
+}
+.video_font p{
+    font-size: 63px;
+    color: #fff;
+}
+/* main */
+.reason_content{
+    border-top: 2px solid #ff6900;
+    border-bottom: 2px solid #ff6900;
+    margin-top: 40px;
+    padding: 20px 0px;
+}
+.reason_content .main_title{
+    margin-bottom: 10px;
+    font-size: 84px;
+    font-family: MILanPro_HEAVY,sans-serif;
+    font-weight: 800;
+    color: #ff6900;
+}
+.reason_content .by_title{
+    font-size: 38px;
+    font-family: MILanPro_BOLD,sans-serif;
+    font-weight: 700;
+    color: #000;
+}
+.reason_content li{
+    float: left;
+    width: 370px;
+    height: 235px;
+    padding: 25px 35px;
+    margin-top: 30px;
+    margin-right: 30px;
+    background: rgba(238, 177, 137,.7) url(../upload/tough.png) no-repeat center;
+}
+.reason_content li h5{
+    font-size: 45px;
+    font-weight: 400;
+    color: #ff6900;
+}
+.reason_content li p{
+    margin-top: 12px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+    line-height: 27px;
+}
+.daily{
+    margin: 40px 0px;
+}
+.daily li{
+    float: left;
+    width: 263px;
+    height: 177px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color:rgba(238, 177, 137,.7) ;
+    background: url(../upload/family_day.png) no-repeat center;
+}
+.daily li a{
+    display: inline-block;
+    width: 263px;
+    height: 177px;
+    padding: 15px 10px;
+}
+.daily .title{
+    font-size: 27px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+.daily li p{
+    color: #fff;
+    display: none;
+}
+.daily li a:hover p{
+    display: block;
+}
+.daily li a:hover{
+    background-color: #ff6900;
+}

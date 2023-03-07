@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("haha");
+        var star={
+            age:10,
+            methor:function(){
+                return 'haha';
+            }
+        };
+
+        function Star(){
+            this.age = 10;
+            this.methor = function(){
+                return 20;
+            }
+        };
+        var bb  = new Star();
+        var bb1 = bb.methor();
+        console.log(bb1);
+        var aa = star.methor();
+        console.log(aa);
+
+        var cc = new Object();
+        cc.age = 20;
+        console.log(cc);
+    </script>
+</body>
+</html>

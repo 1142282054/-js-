@@ -1,0 +1,150 @@
+.header{
+    border-bottom: 2px solid #c6192a;
+}
+/* main */
+.main{
+    margin-top: 15px;
+}
+.pic{
+    width: 450px;
+    height: 536px;
+}
+/* 详细展示制作------------start */
+.pic .focus{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 450px;
+    height: 450px;
+    cursor: move;
+}
+.focus>img{
+    width: 450px;
+}
+
+.focus .pic_position{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255,255 ,255 , 0.3);
+}
+.focus .detail{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 500px;
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+}
+.detail img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 900px;
+}
+/* 详细展示---------------------end */
+
+.pic .others{
+    height: 82px;
+    margin-top: 20px;
+    text-align: center;
+}
+.others li{
+    display: inline-block;
+    margin: 0px 3px;
+}
+.others li a{
+    display: inline-block;
+    width: 78px;
+    height: 78px;
+    padding: 2px;
+    background: url(../upload/produce01.jpg) no-repeat;
+}
+.others::before{
+    content: '';
+    float: left;
+    margin-top: 21px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/icon50.png) no-repeat -48px -29px;
+}
+.others::after{
+    content: '';
+    float: right;
+    margin-top: 21px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/icon50.png) no-repeat -78px -29px;
+}
+
+.bd{
+    width: 700px;
+}
+.bd>p{
+    font-size: 21px;
+}
+
+.bd label{
+    float: left;
+    width: 85px;
+    height: 30px;
+    text-indent: 1em;
+    line-height: 30px; 
+}
+.bd ul{
+    float: left;
+}
+/* 产品信息 */
+.produce{
+    padding: 10px 0px;
+    margin: 15px 0px;
+    background-color: #eaeaea;
+}
+.pric{
+   height: 30px;
+   line-height: 30px; 
+}
+.bd .pric h5{
+    float: left;
+    font-size: 26px;
+    color: #c6192a;
+}
+.sell{
+    margin-top: 5px;
+    height: 120px;
+}
+.sell li{
+    height: 30px;
+    line-height: 30px;
+}
+/* 选择类型 */
+.color{
+    margin-top: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-top: 1px solid #eaeaea;
+}
+.version{
+    margin-top: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+.buyer{
+    margin-top: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+.buyer button{
+    width: 170px;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #c6192a;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,185 @@
+body{text-align: center;}
+/* 导航样式开始 */
+.nav{
+    width: 100%;
+    height: 82px;
+    background-color: black;
+}
+.nav li{
+    float: left;
+    padding: 31px 20px 30px;
+}
+.nav a{
+    color: #fff;
+    font-size: 14px;
+}
+.nav>ul{
+    /* 元素水平居中 */
+    margin: 0 auto;
+    width: 791px;
+}
+/* 鼠标悬停到li上时改变a的字体颜色，重点选择器**************************** */
+.nav li:hover>a{
+    color: #008cff;
+}
+/* 导航样式结束 */
+/* banner样式开始 */
+.banner{
+    /* 最外层的大容器宽度100%适配所有电脑的分辨率 */
+    width: 100%;
+    height: 670px;
+    /* 简写属性 */
+    background: url("../images/263e2819-b3ef-4f32-b9bb-4a6bb87c8438.jpg") center no-repeat;
+}
+/* banner样式结束 */
+
+/* 广告开始,最外层还是宽高背景颜色 */
+.adv{
+    width: 100%;
+    height: 232px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+}
+/* wrap只用来实现元素水平居中,不设置高度,默认高度由内容撑开(水平居中的元素高度不一致) */
+.wrap{
+    width: 1240px;
+    /* 距左右两侧的距离为自动,浏览器自动计算 */
+    margin: 0 auto;
+}
+.adv-box{
+    width: 310px;
+    /* 内容的高度 */
+    height: 187px;
+    /* 内容距离边框的距离 */
+    padding-top: 45px;
+    /* 块级元素水平显示 */
+    float: left;
+}
+.adv-box img{
+    width: 130px;
+}
+.adv-name{
+    color: #333;
+    font-size: 20px;
+}
+.adv-desc{
+    color: #999;
+    font-size: 14px;
+}
+/* 广告结束 */
+
+/* 主体样式开始 */
+.container{
+    /* 块可以不设高度,由内容撑开 */
+    width: 100%;
+    background-color: #f4f4f4;
+    /* 最小宽度,小于这个宽度会有滚动条 */
+    min-width: 1240px;
+    /* 内容溢出部分隐藏,加了此属性,元素会开启BFC格式,变为独立的一块,布局不受子元素影响;
+    当下面的margin-top溢出的时候隐藏起来 */
+    overflow: hidden;
+}
+/* 主体样式结束 */
+/* 手机样式开始 */
+.title{
+    font-size: 30px;
+    height: 45px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+.home-img{
+    width: 100%;
+    height: 450px;
+    background: url("../images/74c63f46-fed1-4c12-b4b2-9d84f497cd16.jpg") center no-repeat;
+}
+/* 透明度 */
+.home-img:hover {
+    opacity: .85;
+}
+.phone-box{
+    width: 100%;
+    height: 1005px;
+}
+.phone-box-top{
+    width: 100%;
+    height: 620px;
+}
+.phone-box-bottom{
+    width: 100%;
+    height: 385px;
+}
+.phone-box-top>div{
+    width: 615px;
+    height: 610px;
+    background-color: #fff;
+    float: left;
+    margin-top: 10px;
+
+}
+.phone-top-left{
+    margin-right: 10px;
+}
+.item{
+    width: 303px;
+    height: 375px;
+    background-color: #fff;
+    float: left;
+    margin-top: 10px;
+    margin-right: 9px;
+}
+/* 为啥直接right就可以了？不应该是item right吗？ */
+.right{
+    margin-right: 0;
+}
+.name1{
+    font-size: 28px;
+    margin-top: 58px;
+}
+.desc1{
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+.price1{
+    color: #c00;
+    font-size: 22px;
+}
+.price1>span{
+    font-size: 14px;
+}
+.price1>i{
+    /* 去掉倾斜 */
+    font-style: normal;
+    font-size: 16px;
+}
+.phone-box-top img{
+    /* 只设宽不设高会等比例缩放 */
+    width: 460px;
+}
+.goods-img{
+    width: 230px;
+    height: 230px;
+    margin-top: 30px;
+}
+.goods-name{
+    margin-bottom: 2px;
+}
+.goods-desc{
+    color: #999;
+    font-size: 14px;
+}
+
+/* 手机样式结束 */
+/* 魅族声学样式开始 */
+/* 这是什么选择器？？？？？？？？？？？？？？？ */
+.home-img1{
+    background-image: url("../images/6c7fe8c4-5024-4e8b-83ea-9393484b552b.jpg");
+}
+.voice-box{
+    width: 100%;
+    height: 770px;
+}
+.img1{
+    width: 100%;
+}
+/* 魅族声学样式结束 */

@@ -1,0 +1,207 @@
+.banner{
+    height: 50px;
+    width: 100%;
+    background-color:#b1191a;
+}
+.nav-center{
+    width: 1000px;
+    height: 50px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+.title{
+    float: left;
+    width: 220px;
+    height: 50px;
+    color: #FFFFFF;
+    /* background-color: red; */
+    text-align: left;
+}
+.title1{
+    width: 220px;
+    height: 25px;
+    /* padding-top: 6px; */
+    padding-bottom: 3px;
+    /* background-color: orange; */
+    font-size: 25px;
+}
+.title2{
+    width: 220px;
+    height: 9px;
+    font-size: 9px;
+}
+
+.nav{
+    float: left;
+}
+.nav-li{
+    padding: 0 27px;
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    border-top: 5px solid transparent;
+}
+.nav-li a{
+    font-size: 16px;
+    color: #FFFFFF;
+    height: 20px;
+}
+.active{
+    border-color: black;
+    background-color: #FFF;
+}
+.active a{
+    color: black;
+}
+
+.content{
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 600px;
+    width: 1000px;
+    border: 1px solid #d3d8de;
+}
+.content-nav{
+    float: left;
+    height: 100%;
+    background-color: #e8f5fe;
+}
+.content-li{
+    width: 130px;
+    height: 100px;
+    line-height: 100px;
+    padding-left: 55px;
+    text-align: left;
+}
+.active-content{
+    background-color: #FFFFFF;
+}
+
+.huaFei{
+    float: left;
+    display: block;
+    width: 700px;
+    height: 500px;
+    background-color: #FFFFFF;
+    padding: 25px 50px;
+}
+.huaFei p{
+    color: #54a147;
+    font-size: 18px;
+    height: 60px;
+    border-bottom: 1px solid #666666;
+}
+.huaFei p::before{
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    background: url(../images/recharge-icon.png) no-repeat 0px -181px;
+}
+
+.liuLiang{
+    float: left;
+    display: none;
+    width: 700px;
+    height: 500px;
+    background-color: #FFFFFF;
+    padding: 25px 50px;
+}
+.shuiDian{
+    float: left;
+    display: none;
+    width: 700px;
+    height: 500px;
+    background-color: #FFFFFF;
+    padding: 25px 50px;
+}
+
+
+.bottom{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 1000px;
+}
+
+.tips{
+    height: 150px;
+    padding-top: 55px;
+    font-size: 16px;
+    color:#666666;
+    text-align: center;
+    background-color: #EAEAEA;
+}
+
+.clean{
+    clear: both;
+}
+/* 话费部分 */
+.huaFei label{
+    float: left;
+    width: 83px;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+}
+.phone_num{
+    margin-top: 40px;
+    height: 40px;
+}
+.phone_num input{
+    float: left;
+    width: 440px;
+    height: 38px;
+    padding-left: 10px;
+    border: 2px solid #e8f5fe;
+}
+.pric{
+    margin-top: 40px;
+    height: 112px;
+}
+.pric ul{
+    float: left;
+    width: 470px;
+}
+.pric ul li{
+    float: left;
+    width: 95px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    margin: 0px 20px 20px 0px;
+    border: 1px solid #e8f5fe;
+}
+.buyer{
+    margin-top: 40px;
+    height: 36px;
+}
+.buyer button{
+    float: left;
+    width: 130px;
+    height: 36px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #b1191a;
+    border-radius: 10px;
+}
+.buyer span{
+    float: left;
+    margin-left: 20px;
+    height: 36px;
+    line-height: 36px;
+}
+.buyer span::before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    
+    background: url(../images/presale-icon.png) no-repeat;
+}
+
+/* 尾部修改 */
+.footer{
+    background-color: #fff;
+}

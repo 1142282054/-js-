@@ -1,0 +1,91 @@
+.header{
+    border-bottom: 2px solid #c6192a;
+}
+
+/* 主体制作 */
+.main{
+    margin-top: 20px;
+    height: 465px;
+}
+.main_hd{
+    padding-left: 10px;
+    height: 43px;
+    line-height: 43px;
+    font-size: 18px;
+    background-color: #ececec;
+}
+.main h3{
+    float: left;
+}
+.main h5{
+    float: right;
+    padding-right: 10px;
+    font-size: 14px;
+}
+.main h5 a{
+    color: #c6192a;
+}
+/* 注册表单制作 */
+.main .regi_form{
+    margin: 60px auto 0px;
+    width: 560px;
+    height: 360px;
+}
+.regi_form li{
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+.regi_form label{
+    float: left;
+    width: 95px;
+    font-size: 14px;
+    text-align: right;
+}
+.regi_form input{
+    float: left;
+    width: 240px;
+    height: 32px;
+    margin-left: 10px;
+    border: 1px solid #999999;
+}
+.regi_form p{
+    float: left;
+}
+/* 获取验证码 */
+.e_check input{
+    width: 160px;
+}
+.e_check button{
+    float: left;
+    margin-left: -1px;
+    width: 80px;
+    height: 32px;
+    font-size: 12px;
+    border: 1px solid #999999;
+}
+/* 同意条款项 */
+.check_item{
+    margin-top: 20px;
+    margin-left: 105px;
+    width: 250px;
+    height: 16px;
+}
+.check_item input{
+    float: left;
+    width: 15px;
+}
+.check_item label{
+    float: left;
+    width: 185px;
+    font-size: 12px;
+}
+.check_item label a{
+    color: #c6192a;
+}
+.regi_form li:last-child input{
+    margin-top: 20px;
+    margin-left: 105px;
+    color: #fff;
+    background-color:#c6192a;
+}

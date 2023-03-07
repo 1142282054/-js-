@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页布局</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+            width: 1226px;
+            margin: 0px auto 0px;
+        }
+        .header{
+            height: 100px;
+            padding: 12px;
+            margin: 0px auto 0px;
+            background-color: #333;
+        }
+        .nav{
+            height: 100px;
+            padding: 12px;
+            margin: 0px auto 0px;
+            background-color: #5f5750;
+        }
+        .content{
+            overflow: hidden;
+            margin: 0px auto 0px;
+            background-color: pink;
+        }
+        .content .container{
+            float: left;
+            width: 800px;
+            margin: 0px 10px;
+            height: 900px;
+            background-color: green;
+        }
+        .content .leftbar{
+            float: left;
+            height: 900px;
+            width: 150px;
+            background-color: orange;
+        }
+        .content .rightcontent{
+            float: right;
+            width: 200px;
+            height: 800px;
+            background-color: gray;
+        }
+        .footer{
+            height: 250px;
+            padding: 40px;
+            margin: 0px auto 0px;
+            background-color: #5f5750;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="nav"></div>
+    <div class="content">
+        <div class="leftbar"></div>
+        <div class="container"></div>
+        <div class="rightcontent"></div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>
